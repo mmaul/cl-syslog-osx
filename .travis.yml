@@ -44,6 +44,7 @@ cache:
     - $HOME/.config/common-lisp
 
 script:
-  - ros -s prove -e '(ql:quickload :cl-syslog-osx-tests)(in-package :cl-syslog-osx--tests)
+  - ln -s mmaul/cl-syslog-osx quicklisp/local-projects/cl-syslog-osx
+  - ros -s prove -e '(ql:quickload :cl-syslog-osx-tests)(in-package :cl-syslog-osx-tests)
          (unless (run-all-tests)
          (uiop:quit 1))'
