@@ -1,7 +1,7 @@
 # CL-SYSLOG [![Build Status](https://travis-ci.org/mmaul/cl-syslog.svg?branch=master)](https://travis-ci.org/mmaul/cl-syslog)
  
 Common Lisp interface to local and remote Syslog facilities.
-   
+    
 FEATURES
 ========
  * Local sysloging implemented via foreign-function calls.
